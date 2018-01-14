@@ -1,7 +1,7 @@
 import django
 
 from django.template import Library, Node, NodeList, VariableDoesNotExist
-from django.core.urlresolvers import NoReverseMatch
+from django.urls import NoReverseMatch
 
 if django.VERSION[:2] < (1, 5):
     # If the user is using Django < 1.5, then load up the url tag
